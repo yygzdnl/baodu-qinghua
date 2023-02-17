@@ -117,11 +117,12 @@ def predict(model_path, input_vec):
 
 # Run
 if __name__ == '__main__':
+    # 指定n的维数
     input_size = 8
     main()
     # 生成一个测试向量
     test_vec = sample(4, input_size)
-    predict('../../../八斗人工智能-清华班/第二周 深度学习基础/week2 深度学习常用组件/model1.pth', test_vec)
+    predict('model1.pth', test_vec)
 
 
 
