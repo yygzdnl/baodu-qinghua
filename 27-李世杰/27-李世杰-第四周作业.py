@@ -15,7 +15,6 @@ import matplotlib.pyplot as plt
 规则：
     if set("一") & set(x):  # 进行与操作
         y = 0
-    #指定字都未出现，则为负样本
     elif set("J")&set(x):
         y = 1
     elif set("，")&set(x):
@@ -24,7 +23,7 @@ import matplotlib.pyplot as plt
         y = 3
     else:
         y = 4
-交叉熵损失函数
+交叉熵损失函数 第一个参数可能的概率，第二个参数是正确的标签
 relu激活函数
 
 """
